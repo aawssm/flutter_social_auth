@@ -1,16 +1,48 @@
-# flutter_social_auth
+# **Social Authentication with Flutter Wihtout Firebase**
 
-A new Flutter project.
+The app allows users to log in using social OAuth
+- Google
+- GitHub
+- LinkedIn
+- Twitter
+- Microsoft
+- Slack
+- Facebook.
 
-## Getting Started
+This project is a Flutter application that demonstrates how to implement social authentication on android web windows ios using a Node.js backend API 
+  - **[Nodedjs Repo Github link](https://github.com/aawssm/oAuth_Nodejs)** 
+  - **[Youtube tutorial Click Here](https://youtu.be/V7-Cp6n4kjg)**.
 
-This project is a starting point for a Flutter application.
+The app uses the following dependencies:
 
-A few resources to get you started if this is your first Flutter project:
+- **`routemaster`**: A simple and flexible routing library for Flutter.
+- **`url_launcher`**: A Flutter package for launching URLs.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## **Installation**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/social-auth-flutter.git
+
+```
+
+1. Install dependencies by running the following command in the project directory:
+
+```
+flutter pub get
+
+```
+
+1. In the **`lib/api/dio.dart`** file, change the **`baseDiol`** variable to match the URL of your backend API.
+2. Run the app on an emulator or physical device using the following command:
+
+```
+flutter run
+
+```
+
+
+After clicking on the desired social login button, the app launches a URL using the **`url_launcher`** package to initiate the OAuth authentication flow. Once the user has successfully authenticated with the chosen provider, they will be redirected back to the app and receive an access token.
+
+The app uses the **`routemaster`** package to manage the different pages of the app, including the login page, home page, and social login callback pages.
